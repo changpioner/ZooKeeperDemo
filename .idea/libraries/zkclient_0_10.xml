@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="zkclient-0.10">
+    <CLASSES>
+      <root url="jar://E:/coding/jars/kafka/zkclient-0.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
