@@ -7,15 +7,14 @@ import nam.utils.ZkUtil
   */
 object Entrance {
   def main(args: Array[String]): Unit = {
-    val creators = Array("creator1","creator2","creator3","creator4","creator5")
+   /* val creators = Array("creator1","creator2","creator3","creator4","creator5")
     creators.par.foreach(
       x=> {
-        println(x+"started ...")
-        ZkUtil.createPath("/namhwik/lockTest3",x,lock=true)
+        ZkUtil.createPath("/namhwik/lockTest",x,lock=true)
       }
     )
-
-    //ZkUtil.close()
-
+    ZkUtil.close()*/
+    val client = ZkUtil.getZkClient
+    client.start()
   }
 }

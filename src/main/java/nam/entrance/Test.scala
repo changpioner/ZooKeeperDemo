@@ -47,7 +47,7 @@ object Test {
       new NodeCacheListener {
         override def nodeChanged(): Unit = {
           println("changed data " +new String(nodeCacheWatcher.getCurrentData.getData))
-          println("changed path " +nodeCacheWatcher.getPath)
+          println("changed path " +nodeCacheWatcher.getCurrentData.getPath)
         }
       }
     )
